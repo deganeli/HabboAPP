@@ -1,0 +1,4 @@
+node_modules
+out/*.key
+out
+.DS_Store

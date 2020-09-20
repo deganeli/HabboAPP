@@ -1,0 +1,43 @@
+{
+  "name": "Seu Hotel",
+  "productName": "Seu Hotel",
+  "settings": {
+    "hotelName": "Seu Hotel",
+    "url": "https://habbo.com.br",
+    "useFrame": true,
+    "backgroundColor": "#e3e3db",
+    "hideMenu": false
+  },
+  "version": "2.0.0",
+  "description": "Aplicativo desktop para o Habbo",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package-mac": "electron-forge package --arch=x64 --platform=darwin",
+    "package-win": "electron-forge package --arch=x64 --platform=win32",
+    "make": "electron-forge make --arch=x64 --platform=darwin && electron-forge make --arch=x64 --platform=win32",
+    "publish": "electron-forge publish --arch=x64 --platform=darwin && electron-forge publish --arch=x64 --platform=win32",
+    "lint": "echo \"No linting configured\""
+  },
+  "keywords": [],
+  "author": "k4nary (desenvolver) & Toolls (rich presence)",
+  "license": "MIT",
+  "config": {},
+  "dependencies": {
+    "about-window": "^1.13.0",
+    "discord-rich-presence": "0.0.8",
+    "electron-open-link-in-browser": "^1.0.2",
+    "electron-prebuilt-compile": "^4.0.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "electron-prebuilt-compile": "4.0.0",
+    "@electron-forge/cli": "6.0.0-beta.39",
+    "@electron-forge/maker-deb": "6.0.0-beta.39",
+    "@electron-forge/maker-rpm": "6.0.0-beta.39",
+    "@electron-forge/maker-squirrel": "6.0.0-beta.39",
+    "@electron-forge/maker-zip": "6.0.0-beta.39",
+    "electron": "5.0.6"
+  }
+}
